@@ -3,7 +3,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
-const [contactSelected, setContactSelected] = useState(false);
+
 
 function App() {
   const [categories] = useState([
@@ -16,6 +16,8 @@ function App() {
     { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
   ]);
 
+  const [contactSelected, setContactSelected] = useState(false);
+  
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
